@@ -21,7 +21,7 @@ public class MallardDuckTest {
 
   @Test
   public void shouldBeAbleToSwim()  {
-    assertThat(mallardDuck.swim(), is("I can Swim!"));
+    assertThat(mallardDuck.swim(), is("I can swim!"));
   }
 
   @Test
