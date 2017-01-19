@@ -1,5 +1,6 @@
 package duck_example.duck;
 
+import duck_example.duck.flyable.FlyWithWings;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,6 +13,7 @@ public class RedHeadDuckTest {
   @Before
   public void setUp() throws Exception {
     redHeadDuck = new RedHeadDuck();
+    redHeadDuck.setFlyBehavior(new FlyWithWings());
   }
 
   @Test
@@ -31,6 +33,6 @@ public class RedHeadDuckTest {
 
   @Test
   public void shouldBeAbleToFly()  {
-    assertThat(redHeadDuck.fly(), is("I can Fly!"));
+    assertThat(redHeadDuck.fly(), is("I can fly with Wings!"));
   }
 }
