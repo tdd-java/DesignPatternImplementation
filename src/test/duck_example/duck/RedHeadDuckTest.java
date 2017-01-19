@@ -28,4 +28,9 @@ public class RedHeadDuckTest {
   public void shouldDisplayRedHeadDuckLogo() {
     assertThat(redHeadDuck.display(), is("I'm RedHead Duck!"));
   }
+
+  @Test
+  public void shouldBeAbleToFly()  {
+    assertThat(redHeadDuck.fly(), is("I can Fly!"));
+  }
 }

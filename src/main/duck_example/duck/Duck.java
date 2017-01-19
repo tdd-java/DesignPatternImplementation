@@ -10,6 +10,10 @@ public abstract class Duck {
     return "I can swim!";
   }
 
+  public String fly(){
+    return "I can Fly!";
+  }
+
   public abstract String display();
 
 }

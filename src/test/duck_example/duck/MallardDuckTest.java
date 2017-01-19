@@ -28,4 +28,9 @@ public class MallardDuckTest {
   public void shouldDisplayMallardDuckLogo()  {
     assertThat(mallardDuck.display(), is("I'm Mallard Duck!"));
   }
+
+  @Test
+  public void shouldBeAbleToFly()  {
+    assertThat(mallardDuck.fly(), is("I can Fly!"));
+  }
 }
